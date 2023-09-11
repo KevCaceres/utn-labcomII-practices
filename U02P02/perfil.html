@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de usuario</title>
+    <style>
+        body{
+            background-color: aliceblue;
+            font-size: 20px;
+        }
+        form {
+            width: 100%;
+            max-width: 600px;
+            margin: 15px;
+        }  
+        h1 {
+            text-align: center;
+            color: rgb(0, 0, 0);
+        }
+
+        input{
+            width: 300px; /* Ancho del campo de entrada */
+            padding: 5px; /* Espacio dentro del campo de entrada */
+            font-size: 16px; /* Tamaño de fuente del campo de entrada */
+        }
+        input[type="checkbox"]{
+            width: 20px; /* Ancho personalizado */
+            height: 20px; /* Altura personalizada */
+        }
+    </style>
+</head>
+
+
+<body>
+    <h1>Perfil del usuario</h1>
+    <form>
+            <legend><b>Datos del usuario:</b></legend>
+            <div>
+                <label for="nombre" aria-placeholder="Ingrese su nombre completo">Nombre:</label>
+                <input type="text" id="nombre" maxlength="40" size="30" placeholder="Ingresar nombre completo" required>
+            </div>
+            <br>
+           <div>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" size="30" maxlength="50" placeholder="Direccion de correo electronico"
+                required>
+            </div>
+            <br>
+            <div>
+                <input type="text" id="estudiante" placeholder="Estudiante" readonly>
+            </div>
+            <br>
+            <div>
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" placeholder="edad" min="1" max="99" size="100">
+            </div>
+            <br>
+            <div>
+                <label for="Pais de origen">Pais de origen</label>
+                <select name="Pais" id="Pais de origen" required>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Brasil">Brasil</option>
+                    <option value="Chile">Chile</option>
+                    <option value="Paraguay">Paraguay</option>
+                    <option value="Uruguay">Uruguay</option>
+                </select>
+            </div>
+            <div>
+                <label for="ocupacion">Ocupación</label>
+                <select name="ocupacion" id="ocupacion" required>
+                    <option value="desempleado">Desempleado</option>
+                    <option value="en busqueda">En busqueda laboral</option>
+                    <option value="part time">Trabajo part time</option>
+                    <option value="full time">Trabajo full time</option>
+                </select>
+            </div>
+            <div>
+                <fieldset>
+                    <legend>Gustos musicales</legend>
+                    <form action="gustos musicales">
+                        <label for="musicales">Musica favorita</label>
+                        <input type="text" id="musica favorita" size="40" maxlength="100"
+                            placeholder="Ingresa tu musica favorita">
+                        <div>
+                            <label for="comidas favoritas">Comidas favoritas</label>
+                            <select name="comidas" id="comidas favoritas">
+                                <option value="pizza">Pizza</option>
+                                <option value="hamburguesa">Hamburguesa</option>
+                                <option value="pastas">Pastas</option>
+                                <option value="vegetales">Vegetales</option>
+                        </div>
+                        </select>
+                        <div>
+                            <label for="checkbox">Recordar credenciales</label>
+                            <input type="checkbox" name="checkbox" id="checkbox">
+                            <input type="submit" value="Confirmar datos e ingresar">
+                        </div>
+
+    </form>
+    </div>
+    </form>
+</body>
+</html>

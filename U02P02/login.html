@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de sesion</title>
+</head>
+    <body>
+        <h1 style="background-color: rgb(255, 12, 12); color: rgb(248, 248, 248);">Inicio de sesión</h1>
+        <p>En un archivo aparte, llamado login.html, crear la estructura básica de un documento HTML que servirá de página de inicio de sesión. La misma debe incluir:
+        Un título (h1) descriptivo de la página. Una breve explicación de los pasos a seguir para iniciar sesión.
+        Un formulario que incluya un campo de texto y un campo de clave. Un botón para enviar el formulario.
+        Un checkbox para recordar los datos del usuario
+        </p>
+         <hr>
+        <h3 style="background-color: rgb(0, 0, 0); color: rgb(255, 255, 255); position: sticky;">Como ingresar con mi cuenta?</h3>
+        
+        <p>El formulario se utiliza para verificar las credenciales de usuario y dar ingreso.</p>
+        <p>El usuario debe completar los campos requeridos para despues cargar y enviar lo datos. El checkbox permite al usuario recordar sus datos
+            la proxima vez que entre en dicha pagina web y pueda agilizar su ingreso a la pagina.
+        </p>
+        <hr>
+    <fieldset>
+        <legend>Formulario de ingreso</legend>
+        <form>
+            <label for="nombre">Nombre de usuario:</label>
+            <input type="text" name="nombre" id="nombre" size="25" maxlength="20" placeholder="Nombre de usuario" />
+            <label for="contraseña">Contraseña:</label>
+            <input type="password" name="contraseña" size="25" id="contraseña" maxlength="10" required
+                placeholder="Contraseña" />
+            <br>
+            <label for="checkbox">Recordar credenciales</label>
+            <input type="checkbox" name="checkbox" id="checkbox">
+            <input type="submit" value="Confirmar datos e ingresar">
+    
+        </form>
+    </fieldset>
+    </body>
+    
+    </html>
